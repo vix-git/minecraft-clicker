@@ -17,7 +17,7 @@ function App() {
       })
   }, [])
 
-  // ✅ Função para clicar no bloco — AGORA sem fetch
+  // Função para clicar no bloco
   const handleClick = () => {
     const newClicks = clicks + 1
     const newPoints = points + upgradeLevel
@@ -26,7 +26,7 @@ function App() {
     setPoints(newPoints)
   }
 
-  // ✅ Função para comprar upgrade — FAZ O FETCH
+  // Função para comprar upgrade
   const buyUpgrade = () => {
     const upgradeCost = upgradeLevel * 10
     if (points >= upgradeCost) {
